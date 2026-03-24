@@ -9,8 +9,8 @@ public class NegativeTests {
     @Test
     void lockedUserTest(){
         open("https://www.saucedemo.com/");
-        $("#user-name").setValue("locked_out_user");
-        $("[data-test=password]").setValue("secret_sauce");
+        $("#user-name").setValue("user");
+        $("[data-test=password]").setValue("password");
         $(".submit-button").click();
         $("[data-test=error]").shouldHave(text("Epic sadface: Sorry, this user has been locked out."));
         sleep(2000);
@@ -24,8 +24,8 @@ public class NegativeTests {
         $(".submit-button").click();
         $("[data-test=shopping-cart-link]").click();
         $("#checkout").click();
-        $("#first-name").setValue("Nikita");
-        $("#last-name").setValue("Starkov");
+        $("#first-name").setValue("OLEG");
+        $("#last-name").setValue("Mamkin");
         $("#postal-code").setValue("200600");
         $("#continue").click();
         $("#last-name").shouldHave(attribute("[placeholder=Last Name]"));

@@ -1,0 +1,1 @@
+rootProject.name = "QA_GURU_project_2"
