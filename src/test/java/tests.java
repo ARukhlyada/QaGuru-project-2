@@ -8,7 +8,7 @@ public class NegativeTests {
 
     @Test
     void lockedUserTest(){
-        open("https://www.saucedemo.com/");
+        open("https://www.saucedemo.com/other_page");
         $("#user-name").setValue("user");
         $("[data-test=password]").setValue("password");
         $(".submit-button").click();
