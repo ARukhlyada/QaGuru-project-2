@@ -9,8 +9,8 @@ public class NegativeTests {
     @Test
     void lockedUserTest(){
         open("https://www.saucedemo.com/");
-        $("#user-name").setValue("locked_out_user");
-        $("[data-test=password]").setValue("secret_sauce");
+        $("#user-name").setValue("another_user");
+        $("[data-test=password]").setValue("you_shall_not_pass");
         $(".submit-button").click();
         $("[data-test=error]").shouldHave(text("Epic sadface: Sorry, this user has been locked out."));
         sleep(2000);
