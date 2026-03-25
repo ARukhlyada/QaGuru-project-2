@@ -19,7 +19,7 @@ public class NegativeTests {
     @Test
     void blockedShippingTest(){
         open("https://www.saucedemo.com/");
-        $("#user-name").setValue("error_user");
+        $("#user-name").setValue("error_user124124124");
         $("[data-test=password]").setValue("secret_sauce");
         $(".submit-button").click();
         $("[data-test=shopping-cart-link]").click();
